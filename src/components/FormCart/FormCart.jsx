@@ -1,11 +1,11 @@
-import React from "react";
-import { Form, Input, Label, Wrapper } from "./FormCart.styled";
-import { useCart } from "../CartContext/CartContext";
+import React from 'react';
+import { Form, Input, Label, Wrapper } from './FormCart.styled';
+import { useCart } from '../CartContext/CartContext';
 
 function FormCart() {
   const { cartFormData, updateCartFormData } = useCart();
 
-  const handleChange = (event) => {
+  const handleChange = event => {
     const { name, value } = event.target;
     updateCartFormData({
       ...cartFormData,
@@ -13,7 +13,7 @@ function FormCart() {
     });
   };
 
-  const handleFormSubmit = (event) => {
+  const handleFormSubmit = event => {
     event.preventDefault();
     updateCartFormData(cartFormData);
   };

@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const NavBarContainer = styled.div`
   margin-bottom: 50px;
   display: flex;
   height: 30px;
-text-decoration: none;
+  text-decoration: none;
 `;
 
 export const ShopNav = styled.span`
@@ -12,7 +12,7 @@ export const ShopNav = styled.span`
   font-size: 20px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
   cursor: pointer;
-margin-right: 20px;
+  margin-right: 20px;
 
   &: hover {
     color: red;

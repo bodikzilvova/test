@@ -1,9 +1,8 @@
-import React from "react";
-import { Wrapper } from "./GoodsCart.styled";
-import GoodsCartItem from "../GoodsCartItem/GoodsCartItem";
+import React from 'react';
+import { Wrapper } from './GoodsCart.styled';
+import GoodsCartItem from '../GoodsCartItem/GoodsCartItem';
 
 function GoodsCart({ cartItems }) {
-
   return (
     <Wrapper>
       {cartItems?.map((item, index) => (

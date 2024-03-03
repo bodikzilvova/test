@@ -1,11 +1,11 @@
-import React from "react";
-import { Btn, TotalPrice, Wrapper } from "./SubmitBtn.styled";
-import { useCart } from "../CartContext/CartContext";
+import React from 'react';
+import { Btn, TotalPrice, Wrapper } from './SubmitBtn.styled';
+import { useCart } from '../CartContext/CartContext';
 
 function SubmitBtn({ onSubmit, totalPrice }) {
   const { cartFormData } = useCart();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = event => {
     event.preventDefault();
     onSubmit(cartFormData);
   };

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Wrapper,
   Img,
@@ -6,11 +6,9 @@ import {
   ProductName,
   ProductPrice,
   Button,
-} from "./GoodsItem.styled";
-
+} from './GoodsItem.styled';
 
 function GoodsItem({ product, onAddToCart }) {
-
   const handleAddToCart = () => {
     onAddToCart(product);
   };

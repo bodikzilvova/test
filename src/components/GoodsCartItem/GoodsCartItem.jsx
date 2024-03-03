@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Btn,
   Img,
@@ -6,8 +6,8 @@ import {
   Input,
   Title,
   Wrapper,
-} from "./GoodsCartItem.styled";
-import { useCart } from "../CartContext/CartContext";
+} from './GoodsCartItem.styled';
+import { useCart } from '../CartContext/CartContext';
 
 function GoodsCartItem({ product }) {
   const { removeFromCart, updateQuantity } = useCart();
@@ -16,7 +16,7 @@ function GoodsCartItem({ product }) {
     removeFromCart(product._id);
   };
 
-  const handleQuantityChange = (e) => {
+  const handleQuantityChange = e => {
     const newQuantity = parseInt(e.target.value);
     updateQuantity(product._id, newQuantity);
   };

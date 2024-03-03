@@ -1,6 +1,6 @@
-import React from "react";
-import { CartNav, Divider, NavBarContainer, ShopNav } from "./NavBar.styled";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { CartNav, Divider, NavBarContainer, ShopNav } from './NavBar.styled';
+import { NavLink } from 'react-router-dom';
 
 function NavBar() {
   return (
@@ -8,8 +8,7 @@ function NavBar() {
       <NavLink to="/">
         <ShopNav>Shop</ShopNav>
       </NavLink>
- 
- 
+
       <Divider />
 
       <NavLink to="/shoppingCart">

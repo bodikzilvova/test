@@ -1,17 +1,17 @@
-import React from "react";
-import { Wrapper } from "./ShopItem.styled";
-import { useShop } from "../ShopContext/ShopContext";
-import axios from "axios";
+import React from 'react';
+import { Wrapper } from './ShopItem.styled';
+import { useShop } from '../ShopContext/ShopContext';
+import axios from 'axios';
 
 function ShopItem() {
   const { setProducts } = useShop();
 
-  const fetchProducts = async (shop) => {
+  const fetchProducts = async shop => {
     try {
       const response = await axios.get(`http://localhost:5000/${shop}`);
       setProducts(response.data);
     } catch (error) {
-      console.error("Error fetching products:", error);
+      console.error('Error fetching products:', error);
     }
   };
   return (
