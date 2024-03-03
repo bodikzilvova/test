@@ -1,18 +1,17 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
+import { Route, Routes } from "react-router-dom";
+import Layout from "./Layout/Layout";
+import ShopPage from "../pages/ShopPage/ShopPage";
+import CartPage from "../pages/CartPage/CartPage";
 
-      
-    >
-      React homework template
-    </div>
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />} >    
+      <Route index element={<ShopPage />} />
+      <Route path="/shoppingCart" element={<CartPage />} />
+      </Route>
+    </Routes>
   );
-};
+}
+
+export default App;
