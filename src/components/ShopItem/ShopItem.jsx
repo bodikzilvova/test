@@ -8,7 +8,7 @@ function ShopItem() {
 
   const fetchProducts = async shop => {
     try {
-      const response = await axios.get(`http://localhost:5000/${shop}`);
+      const response = await axios.get(`https://backend-test-s1me.onrender.com/${shop}`);
       setProducts(response.data);
     } catch (error) {
       console.error('Error fetching products:', error);

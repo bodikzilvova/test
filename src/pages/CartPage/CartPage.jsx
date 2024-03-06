@@ -15,7 +15,7 @@ function CartPage() {
   const handleFormSubmit = async () => {
     try {
       const response = await axios.post(
-        'http://localhost:5000/order/place-order',
+        'https://backend-test-s1me.onrender.com/order/place-order',
         {
           ...cartFormData,
           cartItems: cartItemNames,

@@ -12,7 +12,7 @@ function GoodsList() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/shop1')
+      .get('https://backend-test-s1me.onrender.com/shop1')
       .then(response => {
         setData(response.data);
       })
